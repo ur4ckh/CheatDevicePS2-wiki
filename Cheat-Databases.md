@@ -23,5 +23,9 @@ Cheat Section
 Cheat 3
 11111111 00000000
 
+Cheat 4
+20000004 00000001
+20000008 00000001
+
 // Comment line
 ```
