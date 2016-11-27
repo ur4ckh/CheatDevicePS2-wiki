@@ -10,4 +10,4 @@ The Save Manager allows save files to be transferred between memory cards and a 
 * Contents of ZIP files assumed to be correct (1 directory with files) without checking.
 
 # Note about ZIP files
-As of November 27, 2016, Cheat Device now supports ZIP files for creating/extracting save files. The ZIP file is expected to contain one directory (with the same name used on the memory card's filesystem) containing all the necessary save files inside it. Cheat Device will create ZIP files in this manor, but if you create a ZIP file for saves outside of Cheat Device, make sure it follows this rule.
+As of November 27, 2016, Cheat Device now supports ZIP files for creating/extracting save files. The ZIP file is expected to contain one directory (with the same name used on the memory card's filesystem) containing all the necessary files used by the save inside it. Cheat Device will create ZIP files in this manor, but if you create a ZIP file for saves outside of Cheat Device, make sure it follows this rule.
