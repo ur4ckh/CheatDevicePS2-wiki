@@ -4,7 +4,7 @@ Cheats can be stored in two formats:
 
 2. **TXT** - These can be edited in a text editor and don't need to be converted. This works well for small lists, but can take longer to load if it becomes too large.
 
-You can use [cdb-util](https://mega.nz/#!LNYB0DAL!n_2Co6zI8c3fun-Mb2-KtA-nIR1wn1vCP_mu4dQR_wg) to convert to/from CDB and TXT formats. The location of the cheat file needs to be set in [CheatDevicePS2.ini](https://github.com/root670/CheatDevicePS2/wiki/Settings).
+You can use [cdb-util](https://github.com/root670/cdb-util/releases) to convert to/from CDB and TXT formats. The location of the cheat file needs to be set in [CheatDevicePS2.ini](https://github.com/root670/CheatDevicePS2/wiki/Settings).
 
 # Cheat Format
 TXT cheat databases follow this format:
