@@ -4,7 +4,7 @@ Settings are stored in an ini file named `CheatDevicePS2.ini` in the directory C
 * boot[0-4] = Paths to boot from when cheats are enabled in addition to the disk-boot option
 
 # Default Values
-If CheatDevicePS2.ini can't be loaded, these default values will be used instead:
+If the settings file can't be loaded, these default values will be used instead:
 * databasePath = CheatDatabase.cdb
 * boot0 = mc0:/BOOT/BOOT.ELF
 * boot1 = mc1:/BOOT/BOOT.ELF
