@@ -5,7 +5,7 @@ Settings are stored in an ini file named `CheatDevicePS2.ini` in the directory C
 
 # Default Values
 If the settings file can't be loaded, these default values will be used instead:
-* databasePath = CheatDatabase.cdb
+* database = CheatDatabase.cdb
 * boot0 = mc0:/BOOT/BOOT.ELF
 * boot1 = mc1:/BOOT/BOOT.ELF
 * boot2 = mass:/BOOT/BOOT.ELF
