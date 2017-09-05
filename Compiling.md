@@ -49,7 +49,7 @@ That last step will warn you about not having some image libraries available, bu
 
 **7. Compile Cheat Device**
   ```
-git clone --recursive git://github.com/root670/CheatDevicePS2 ~/CheatDevicePS2
+git clone git://github.com/root670/CheatDevicePS2 ~/CheatDevicePS2
 cd ~/CheatDevicePS2
 make
   ```
