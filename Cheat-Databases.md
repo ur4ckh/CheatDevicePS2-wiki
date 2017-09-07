@@ -7,12 +7,6 @@ Each game in the cheat database contains a cheat list, where each cheat contains
 You can use [cdb-util](https://github.com/root670/cdb-util/releases) to convert to/from CDB and TXT formats. The location of the cheat file needs to be set in [CheatDevicePS2.ini](https://github.com/root670/CheatDevicePS2/wiki/Settings).
 
 # TXT Cheat Database Format
-* A **game** is declared as the game's title enclosed by quotation marks followed by one or more cheats.
-* A **cheat** begins with a line of text followed by **code lines** formatted as 8 hexidecimal characters for the address, a space character, and 8 hexidecimal characters for the value.
-* When two or more cheat titles are placed on adjacent lines without code lines between them, all cheat titles before the last one will be treated as **cheat sections** to organize a cheat list or keep notes to be displayed.
-* A **comment** begins with double slashes.
-
-Example:
 ```
 "Game Name"
 Enable
@@ -34,3 +28,7 @@ Cheat 4
 
 // Comment line
 ```
+* A **game** is declared as the game's title enclosed by quotation marks followed by one or more cheats.
+* A **cheat** begins with a line of text followed by **code lines** formatted as 8 hexidecimal characters for the address, a space character, and 8 hexidecimal characters for the value.
+* When two or more cheat titles are placed on adjacent lines without code lines between them, all cheat titles before the last one will be treated as **cheat sections** to organize a cheat list or keep notes to be displayed.
+* A **comment** begins with double slashes.
