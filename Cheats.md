@@ -32,3 +32,8 @@ Cheat 4
 * A **cheat** begins with a line of text followed by **code lines** formatted as 8 hexidecimal characters for the address, a space character, and 8 hexidecimal characters for the value.
 * When two or more cheat titles are placed on adjacent lines without code lines between them, all cheat titles before the last one will be treated as **cheat sections** to organize a cheat list or keep notes to be displayed.
 * A **comment** begins with double slashes.
+
+# Enable Codes
+Each game should have a cheat containing an "enable code", AKA a 9-type hook code. These are used to install a jump to the code engine during gameplay to apply the active codes. Some older games don't have 9-type enable codes, in which case the code engine will attempt to find a hook automatically. This has the side-effect of automatically hooking into loader ELFs such as OpenPS2Loader, GSM, etc. which has a good chance of causing these loaders to crash. 
+
+The advantage of a 9-type hook code over an automatic hook (whether it's using the current method or by hooking a known location in the kernel) is that the code engine will apply the codes **only when the game is known to be running** since it does a 32-bit comparison before installing the hook. I had considered using a kernel hook to make Cheat Engine universally support all games, but couldn't come up with a reliable solution to avoid corrupting loader ELFs.
