@@ -1,7 +1,8 @@
-Settings are stored in an ini file named `CheatDevicePS2.ini` in the directory Cheat Device is run from.
+Settings are stored in a file named `CheatDevicePS2.ini` in the directory Cheat Device is run from.
+
 # [CheatDevicePS2]
 * database = Path to .CDB or .TXT cheat database
-* boot[0-4] = Paths to boot from when cheats are enabled in addition to the disk-boot option
+* boot[0-4] = Paths to ELF files to boot from when cheats are enabled in addition to the disk-boot option
 
 # Default Values
 If the settings file can't be loaded, these default values will be used instead:
