@@ -1,4 +1,4 @@
-Each game in the cheat database contains a cheat list, where each cheat contains a list of code lines to be processed by the engine during gameplay. Cheat databases can be stored in two formats:
+Each game in the cheat database contains a cheat list, where each cheat contains a list of code lines to be processed by the engine during gameplay. Cheat databases can be stored in the following formats:
 
 1. **CDB (recommended)** - A compressed binary file that can be loaded quickly and compressed to a small file size. [cdb-util](https://github.com/root670/cdb-util/releases) is used to convert to/from CDB and TXT formats. 
 
