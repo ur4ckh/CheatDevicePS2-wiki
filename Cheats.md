@@ -4,6 +4,8 @@ Each game in the cheat database contains a cheat list, where each cheat contains
 
 2. **TXT** - A text file can be edited in a text editor and doesn't need to be converted. This works well for small lists but can take a while to load from memory cards or USB drives if it becomes large. An explanation of the TXT format can be found [below](#txt-cheat-database-format).
 
+3. **Zipped TXT** - A text file containing cheats compressed in a ZIP file. This arrangement will likely replace CDB in newer releases as is easy to edit and allows for fast loading of a large cheat list without using a a converter to prepare the cheat database file.
+
 The location of the cheat database file needs to be set in [CheatDevicePS2.ini](https://github.com/root670/CheatDevicePS2/wiki/Settings).
 
 # Enable Codes
