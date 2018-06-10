@@ -6,6 +6,7 @@ The Save Manager allows save files to be transferred between memory cards and a 
 * **PSU** - EMS Adapter Save. Simple format that doesn't use any compression.
 
 # Known Bugs
+* **There have been reports of the USB driver corrupting flash drives when exporting saves. I haven't upgraded the driver to a newer one, so please use this at your own risk!**
 * Amount of free space on flash drives can't be determined resulting in corruption if a file exceeding its remaining capacity is written.
 * Contents of ZIP files assumed to be correct (1 directory with files) without checking.
 
