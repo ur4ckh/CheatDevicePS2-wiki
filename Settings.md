@@ -8,6 +8,7 @@ Settings are stored in a file named `CheatDevicePS2.ini` in the directory Cheat 
 ## Default Values
 
 If the settings file can't be loaded, these default values will be used instead:
+
 |Key|Value|
 |---|---|
 |database|CheatDatabase.cdb|
