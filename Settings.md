@@ -8,9 +8,11 @@ Settings are stored in a file named `CheatDevicePS2.ini` in the directory Cheat 
 ## Default Values
 
 If the settings file can't be loaded, these default values will be used instead:
-* database = CheatDatabase.cdb
-* boot0 = mass:/BOOT/BOOT.ELF
-* boot1 = mass:/BOOT/ESR.ELF
-* boot2 = mc0:/BOOT/BOOT.ELF
-* boot3 = mc1:/BOOT/BOOT.ELF
-* boot4 = rom:osdsys
+|Key|Value|
+|---|---|
+|database|CheatDatabase.cdb|
+|boot0|mass:/BOOT/BOOT.ELF|
+|boot1|mass:/BOOT/ESR.ELF|
+|boot2|mc0:/BOOT/BOOT.ELF|
+|boot3|mc1:/BOOT/BOOT.ELF|
+|boot4|rom:osdsys|
