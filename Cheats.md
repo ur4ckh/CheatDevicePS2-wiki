@@ -62,7 +62,7 @@ You can use special codes to represent gamepad buttons in game and cheat titles 
 |![](https://raw.githubusercontent.com/root670/CheatDevicePS2/master/resources/buttonStart.png)|`{START}`|
 |![](https://raw.githubusercontent.com/root670/CheatDevicePS2/master/resources/buttonSelect.png)|`{SELECT}`|
 
-### Example
+### Examples
 
 `Hold {L1}+{R1} to Spawn Vehicle`
 
