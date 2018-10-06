@@ -55,8 +55,12 @@ You can use special codes to represent gamepad buttons in game and cheat titles 
 |![](https://raw.githubusercontent.com/root670/CheatDevicePS2/master/resources/buttonSquare.png)|`{SQUARE}`|
 |![](https://raw.githubusercontent.com/root670/CheatDevicePS2/master/resources/buttonL1.png)|`{L1}`|
 |![](https://raw.githubusercontent.com/root670/CheatDevicePS2/master/resources/buttonL2.png)|`{L2}`|
+|![](https://raw.githubusercontent.com/root670/CheatDevicePS2/master/resources/buttonL3.png)|`{L3}`|
 |![](https://raw.githubusercontent.com/root670/CheatDevicePS2/master/resources/buttonR1.png)|`{R1}`|
 |![](https://raw.githubusercontent.com/root670/CheatDevicePS2/master/resources/buttonR2.png)|`{R2}`|
+|![](https://raw.githubusercontent.com/root670/CheatDevicePS2/master/resources/buttonR3.png)|`{R3}`|
+|![](https://raw.githubusercontent.com/root670/CheatDevicePS2/master/resources/buttonStart.png)|`{START}`|
+|![](https://raw.githubusercontent.com/root670/CheatDevicePS2/master/resources/buttonSelect.png)|`{SELECT}`|
 
 ### Example
 
