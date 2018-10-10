@@ -3,7 +3,7 @@ Settings are stored in a file named `CheatDevicePS2.ini` in the directory Cheat 
 ## [CheatDevicePS2]
 
 * database = Path to a cheat database. A list of compatible formats can be found [here](https://github.com/root670/CheatDevicePS2/wiki/Cheats).
-* boot[0-4] = Paths to ELF files to boot from when cheats are enabled in addition to the disk-boot option
+* boot[0-4] = Paths to ELF files to boot from in addition to the disk-boot option. Files on `mass:`, `mc0:`, `mc1:`, `host:`, `rom:`, and `cdrom:` can be used.
 
 ## Default Values
 
