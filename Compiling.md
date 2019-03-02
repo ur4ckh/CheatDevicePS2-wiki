@@ -56,6 +56,7 @@ make
 
 # Build Options
 These can be passed in as arguments to `make` or the Docker build scripts.
+
 |Argument|Description|
 |---|---|
 |DTL_T10000=1|Create executable compatible with PS2 TOOL (DTL-T10000)|
