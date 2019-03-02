@@ -53,3 +53,9 @@ git clone git://github.com/root670/CheatDevicePS2 ~/CheatDevicePS2
 cd ~/CheatDevicePS2
 make
   ```
+
+# Build Options
+|Argument|Description|
+|---|---|
+|DTL_T10000=1|Create executable compatible with PS2 TOOL (DTL-T10000)|
+|NO_MASS=1|Replace "mass" device names with "host". This helps with debugging the save manager with PCSX2|
