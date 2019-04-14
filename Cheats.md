@@ -4,8 +4,6 @@ Each game in the cheat database contains a cheat list, where each cheat contains
 
 2. **TXT** - A text file that can be edited in a text editor and doesn't need to be converted. This works well for small lists but can take a while to load from memory cards or USB drives if it becomes large. An explanation of the TXT format can be found [below](#txt-cheat-database-format).
 
-3. **CDB (deprecated)** - A compressed binary file that can be loaded quickly and compressed to a small file size. [cdb-util](https://github.com/root670/cdb-util/releases) is used to convert to/from CDB and TXT formats. *This format will no longer be supported in the future.*
-
 The location of the cheat database files need to be set in [CheatDevicePS2.ini](https://github.com/root670/CheatDevicePS2/wiki/Settings).
 
 ## Enable Codes
