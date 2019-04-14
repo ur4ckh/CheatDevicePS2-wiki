@@ -1,19 +1,17 @@
-Settings are stored in a file named `CheatDevicePS2.ini` in the directory Cheat Device is run from.
+Settings are stored in a file named `CheatDevicePS2.ini` in the directory Cheat Device is run from. If the settings file can't be loaded, or an entry is missing, default values will be used instead.
 
 ## [CheatDevicePS2]
 
-* database = Path to a cheat database. A list of compatible formats can be found [here](https://github.com/root670/CheatDevicePS2/wiki/Cheats).
-* boot[0-4] = Paths to ELF files to boot from in addition to the disk-boot option. Files on `mass:`, `mc0:`, `mc1:`, `host:`, `rom:`, and `cdrom:` can be used.
+|Key|Description|Default Value|
+|---|---|---|
+|databaseReadOnly|Path to read-only cheat database|*(none)*|
+|databaseReadWrite|Path to read-write cheat database|*(none)*|
+|boot0|ELF file path|`mass:/BOOT/BOOT.ELF`|
+|boot1|ELF file path|`mass:/BOOT/ESR.ELF`|
+|boot2|ELF file path|`mc0:/BOOT/BOOT.ELF`|
+|boot3|ELF file path|`mc1:/BOOT/BOOT.ELF`|
+|boot4|ELF file path|`rom:osdsys`|
 
-## Default Values
-
-If the settings file can't be loaded, these default values will be used instead:
-
-|Key|Value|
-|---|---|
-|database|CheatDatabase.cdb|
-|boot0|mass:/BOOT/BOOT.ELF|
-|boot1|mass:/BOOT/ESR.ELF|
-|boot2|mc0:/BOOT/BOOT.ELF|
-|boot3|mc1:/BOOT/BOOT.ELF|
-|boot4|rom:osdsys|
+## Notes
+* Paths to files on `mass:`, `mc0:`, `mc1:`, `host:`, `rom:`, and `cdrom:` can be used. If no device specifier is given in the path (e.g. `mass:/file.txt`), the file is assumed to be a relative path based in the directory Cheat Device was launched from.
+* A list of file formats supported by the `databaseReadOnly` and `databaseReadWrite` options can be found [here](https://github.com/root670/CheatDevicePS2/wiki/Cheats).
