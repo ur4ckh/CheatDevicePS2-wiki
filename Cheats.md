@@ -1,12 +1,12 @@
 Each game in the cheat database contains a cheat list, where each cheat contains a list of code lines to be processed by the engine during gameplay. Cheat databases can be stored in the following formats:
 
-1. **CDB (recommended)** - A compressed binary file that can be loaded quickly and compressed to a small file size. [cdb-util](https://github.com/root670/cdb-util/releases) is used to convert to/from CDB and TXT formats. 
+1. **Zipped TXT (recommended)** - A zip file containing one or more text files following the format described [below](#txt-cheat-database-format). This can load much quicker than regular text files.
 
-2. **TXT** - A text file can be edited in a text editor and doesn't need to be converted. This works well for small lists but can take a while to load from memory cards or USB drives if it becomes large. An explanation of the TXT format can be found [below](#txt-cheat-database-format).
+2. **TXT** - A text file that can be edited in a text editor and doesn't need to be converted. This works well for small lists but can take a while to load from memory cards or USB drives if it becomes large. An explanation of the TXT format can be found [below](#txt-cheat-database-format).
 
-3. **Zipped TXT** - A zip file containing one or more text files following the format described [below](#txt-cheat-database-format). This format will likely replace CDB in newer releases since it's easy to edit and allows for fast loading of a large cheat list without using a converter to prepare the cheat database file.
+3. **CDB (deprecated)** - A compressed binary file that can be loaded quickly and compressed to a small file size. [cdb-util](https://github.com/root670/cdb-util/releases) is used to convert to/from CDB and TXT formats. *This format will no longer be supported in the future.*
 
-The location of the cheat database file needs to be set in [CheatDevicePS2.ini](https://github.com/root670/CheatDevicePS2/wiki/Settings).
+The location of the cheat database files need to be set in [CheatDevicePS2.ini](https://github.com/root670/CheatDevicePS2/wiki/Settings).
 
 ## Enable Codes
 Each game should have a cheat containing an "enable code", AKA a 9-type hook code. These are used to install a jump to the code engine during gameplay to apply the active codes. Some older games don't have 9-type enable codes, in which case the code engine will attempt to find a hook automatically. This has the side-effect of automatically hooking into loader ELFs such as OpenPS2Loader, wLaunchELF, GSM, etc. which has a good chance of causing these loaders to crash. Because of this, it is highly recommended that you add a 9-type enable code to a game's cheat list if it doesn't already have one.
