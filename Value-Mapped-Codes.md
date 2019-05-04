@@ -4,7 +4,7 @@ A value-mapped cheat allows a cheat to reference a list of possible values witho
 
 A value map is defined by a name enclosed by brackets followed by value-key pairs separated by a `=`, `-` or `:` character. Values are in hexidecimal and can be either 2, 4, or 8 characters in length. A game can define up to 16 value maps that can be referenced by any of the game's code lines that appear after the map has been defined.
 
-A code line can reference a value map by using a `$` character followed by the value map's name. The reference can appear in place of the usual value digits that would follow a code's address (i.e. `20000000 $MapName`), and can optionally be preceded by 2, 4, or 6 digits to be combined with mapped value. Regardless of if the preceding digits are specified or not, the mapped value will always be used in place the lower bits of the code value.
+A code line can reference a value map by using a `$` character followed by the value map's name. The reference can appear in place of the usual value digits that would follow a code's address (i.e. `20000000 $MapName`), and can optionally be preceded by 2, 4, or 6 digits to be combined with mapped value. Regardless of if the preceding digits are specified or not, the mapped value will always be used in place of the lower bits of the code value.
 
 ## Example
 
