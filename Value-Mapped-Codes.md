@@ -31,7 +31,7 @@ Press {SELECT} to Spawn a Car
 * A cheat named `Press {SELECT} to Spawn a Car` references the map in the 4th code line. When the cheat is chosen in Cheat Device, a list of all possible `Car` values to be used with the cheat is displayed.
 * As an example, if *Stinger* is chosen from the list, `20275FB4 24040084` will be added to the list of codes to be processed by the code engine.
 
-## Advanced Example
+## Advanced Examples
 
 ```
 "Game Title"
