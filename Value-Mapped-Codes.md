@@ -33,6 +33,7 @@ Press {SELECT} to Spawn a Car
 ## Notes
 
 * Value map names cannot contain spaces.
+* Up to 16 value maps per game can be defined.
 * It doesn't matter when a value map is defined as long as no cheats reference it before it is defined.
 * Different games can have value maps with the same name.
 * Value map entries are insensitive to whitespace around the separating character.
