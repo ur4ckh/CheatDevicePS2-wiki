@@ -33,6 +33,17 @@ Cheat 4
 20000004 00000001
 20000008 00000001
 
+[ListOfValues]
+00 - Value 1
+01: Value 2
+02 = Value 3
+
+Cheats can reference a map of values
+20000000 $ListOfValues
+
+Digits can proceed the reference too
+20000000 FFFF$ListOfValues
+
 // Comment line
 # Comment line
 ```
