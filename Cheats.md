@@ -33,6 +33,9 @@ Cheat 4
 20000004 00000001
 20000008 00000001
 
+Press {CROSS} to Win
+20000000 00000001
+
 [ListOfValues]
 00 - Value 1
 01: Value 2
