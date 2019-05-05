@@ -51,7 +51,7 @@ Digits can proceed the reference too
 # Comment line
 ```
 * A **game** is declared as the game's title enclosed by double quotation marks followed by one or more **cheats**.
-* A **cheat** begins with a line of text followed by **code lines** formatted as 8 hexidecimal characters for the address, a space character, and 8 hexidecimal characters for the value.
+* A **cheat** begins with a line of text followed by **code lines** formatted as 8 hexadecimal characters for the address, a space character, and 8 hexadecimal characters for the value. A code line can also reference a [value map](https://github.com/root670/CheatDevicePS2/wiki/Value-Mapped-Cheats).
 * When two or more cheat titles are placed on adjacent lines without code lines between them, all cheat titles before the last one will be treated as **cheat sections** to organize a cheat list or keep notes to be displayed in the menu.
 * A **comment** begins with two forward slashes or a pound sign.
 * Only ASCII-encoded text files are supported using either Windows- or Unix-style line endings.
