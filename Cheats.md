@@ -6,6 +6,8 @@ Each game in the cheat database contains a cheat list, where each cheat contains
 
 The location of the cheat database files need to be set in [CheatDevicePS2.ini](https://github.com/root670/CheatDevicePS2/wiki/Settings).
 
+A list of supported code types can be found [here](https://github.com/root670/CheatDevicePS2/wiki/Code-Types).
+
 ## Enable Codes
 Each game should have a cheat containing an "enable code", AKA a 9-type hook code. These are used to install a jump to the code engine during gameplay to apply the active codes. Some older games don't have 9-type enable codes, in which case the code engine will attempt to find a hook automatically. This has the side-effect of automatically hooking into loader ELFs such as OpenPS2Loader, wLaunchELF, GSM, etc. which has a good chance of causing these loaders to crash. Because of this, it is highly recommended that you add a 9-type enable code to a game's cheat list if it doesn't already have one.
 
