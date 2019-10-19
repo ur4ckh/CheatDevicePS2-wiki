@@ -174,7 +174,7 @@ Compares the value at address `a` to value `v`, and executes the next `n` code l
 |---|---|
 |0|==|
 |1|!=|
-|2|>|
+|2|<|
 |3|>|
 |4|NAND|
 |5|AND|
