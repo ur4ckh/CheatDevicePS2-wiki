@@ -131,7 +131,7 @@ Loads the 32-bit base address from address `a`, adds offset `i` to it, and const
 
 Performs a bitwise logical operation between value `v` and the value stored at address `a`.
 
-## 8: 8-bit / 16-bit Constant serial write
+## 8: 8-bit / 16-bit constant serial write
 
 **NOTE**: This code type is unique to Cheat Device.
 
