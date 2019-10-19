@@ -60,4 +60,4 @@ These can be passed in as arguments to `make` or the Docker build scripts.
 |Argument|Description|
 |---|---|
 |DTL_T10000=1|Create executable compatible with PS2 TOOL (DTL-T10000)|
-|NO_MASS=1|Replace "mass" device names with "host". This helps with debugging the save manager with PCSX2|
+|NO_MASS=1|Replace `mass:` device names with `host:` in the Save Manager. This helps with debugging the save manager in PCSX2.
