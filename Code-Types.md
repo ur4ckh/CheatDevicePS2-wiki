@@ -1,4 +1,4 @@
-Cheat Device's engine is borrowed from ps2rd, which roughly supports the code types used by CodeBreaker. This page documents each supported code type with any caveats to be aware of.
+Cheat Device's engine is borrowed from ps2rd, which closely supports the code types used by CodeBreaker. This page documents each supported code type with any caveats to be aware of.
 
 ## 0: 8-bit constant write
 ```
@@ -94,6 +94,8 @@ Copy `n` bytes from source address `s` to destination address `d`.
 ```
 
 Loads the 32-bit base address from address `a`, adds offset `i` to it, and constantly write the value `v` to the final address.
+
+**NOTE**: Only single dereferences are supported.
 
 ## 7: Bitwise operation
 
