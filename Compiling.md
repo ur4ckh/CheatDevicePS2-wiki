@@ -1,4 +1,4 @@
-This will explain how to compile Cheat Device on Linux. This was tested under Fedora 25 x86_64 but should work with other distros.
+This will explain how to compile Cheat Device on Linux without using Docker. This was tested under Fedora 25 x86_64 but should work with other distros, including WSL.
 
 **1. Install necessary tools for building the toolchain. Some of these are probably installed already.**
  * gcc
