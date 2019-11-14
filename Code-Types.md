@@ -93,7 +93,7 @@ Copy `n` bytes from source address `s` to destination address `d`.
 00020000 iiiiiiii
 ```
 
-Loads the 32-bit base address from address `a`, adds offset `i` to it, and constantly write the value `v` to the final address.
+Loads the 32-bit base address from address `a`, adds offset `i` to it, and constantly writes the value `v` to the final address.
 
 **NOTE**: Multiple dereferences (i.e. pointer to pointer) are not supported.
 
