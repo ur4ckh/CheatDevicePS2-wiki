@@ -259,16 +259,28 @@ Daaaaaaa nnt0vvvv
 uint16_t *p = a;
 if      (t == 0 && *p == v) { // Execute next n lines }
 else if (t == 1 && *p != v) { // Execute next n lines }
-else if (t == 2 && *p < v) { // Execute next n lines }
-else if (t == 3 && *p > v) { // Execute next n lines }
-else if (t == 4 && *p != v) { // Execute next n lines }
-else if (t == 5 && *p != v) { // Execute next n lines }
-else if (t == 5 && *p != v) { // Execute next n lines }
+else if (t == 2 && *p < v)  { // Execute next n lines }
+else if (t == 3 && *p > v)  { // Execute next n lines }
+else if (t == 4 && *p & ~v) { // Execute next n lines }
+else if (t == 5 && *p & v)  { // Execute next n lines }
+else if (t == 6 && *p | ~v) { // Execute next n lines }
+else if (t == 7 && *p | v)  { // Execute next n lines }
 ```
 
 ### 8-bit test
 ```
 Daaaaaaa nnt1vvvv
+```
+```c
+uint8_t *p = a;
+if      (t == 0 && *p == v) { // Execute next n lines }
+else if (t == 1 && *p != v) { // Execute next n lines }
+else if (t == 2 && *p < v)  { // Execute next n lines }
+else if (t == 3 && *p > v)  { // Execute next n lines }
+else if (t == 4 && *p & ~v) { // Execute next n lines }
+else if (t == 5 && *p & v)  { // Execute next n lines }
+else if (t == 6 && *p | ~v) { // Execute next n lines }
+else if (t == 7 && *p | v)  { // Execute next n lines }
 ```
 
 Compares the value at address `a` to value `v`, and executes the next `n` code lines only if the test condition `t` is true.
