@@ -78,24 +78,38 @@ Copy `n` bytes from source address `s` to destination address `d`.
 ### 8-bit write
 ```
 6aaaaaaa 000000vv
-00000000 iiiiiiii
+0000nnnn    p_0
+   p_1      p_2
+........ ........
+ p_(n-1)    p_n
 ```
 
 ### 16-bit write
 ```
 6aaaaaaa 0000vvvv
-00010000 iiiiiiii
+0001nnnn    p_0
+   p_1      p_2
+........ ........
+ p_(n-1)    p_n
 ```
 
 ### 32-bit write
 ```
 6aaaaaaa vvvvvvvv
-00020000 iiiiiiii
+0002nnnn    p_0
+   p_1      p_2
+........ ........
+ p_(n-1)    p_n
 ```
+#### Single dereference (`n` <= 1)
 
-Loads the 32-bit base address from address `a`, adds offset `i` to it, and constantly writes the value `v` to the final address.
+Loads the 32-bit base address from address `a`, adds offset `p_0` to it, and constantly writes the value `v` to the final address.
 
-**NOTE**: Multiple dereferences (i.e. pointer to pointer) are not supported.
+#### Multiple dereferences (`n` > 1)
+
+Loads the 32-bit base address from address `a`, adds offset `p_0` to it to get an initial pointer address `P_0`. Dereference `P_0` and add `p_1` to the result to get the next pointer address `P_1`. This is done `n` times until the final address `P_n` is found, at which point the value `v` is written to it.
+
+**NOTE:** Execution of this code type will stop if a NULL pointer is encountered to prevent a crash.
 
 ## 7: Bitwise operation
 
