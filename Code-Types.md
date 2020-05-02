@@ -4,11 +4,17 @@ Cheat Device's engine is borrowed from ps2rd, which closely supports the code ty
 ```
 0aaaaaaa 000000vv
 ```
+```c
+*(uint8_t *)a = v;
+```
 Constantly writes the 8-bit value `v` to address `a`.
 
 ## 1: 16-bit constant write
 ```
 1aaaaaaa 0000vvvv
+```
+```c
+*(uint16_t *)a = v;
 ```
 Constantly writes the 16-bit value `v` to address `a`.
 
@@ -17,6 +23,9 @@ Constantly writes the 16-bit value `v` to address `a`.
 ## 2: 32-bit constant write
 ```
 2aaaaaaa vvvvvvvv
+```
+```c
+*(uint32_t *)a = v
 ```
 Constantly writes the 16-bit value `v` to address `a`.
 
@@ -29,20 +38,32 @@ This code has multiple forms:
 ```
 300000vv 0aaaaaaa
 ```
+```c
+*(uint8_t *)a += v;
+```
 
 ### 8-bit decrement
 ```
 301000vv 0aaaaaaa
+```
+```c
+*(uint8_t *)a -= v;
 ```
 
 ### 16-bit increment
 ```
 3020vvvv 0aaaaaaa
 ```
+```c
+*(uint16_t *)a += v;
+```
 
 ### 16-bit decrement
 ```
 3030vvvv 0aaaaaaa
+```
+```c
+*(uint16_t *)a -= v;
 ```
 
 ### 32-bit increment
@@ -50,11 +71,17 @@ This code has multiple forms:
 30400000 0aaaaaaa
 vvvvvvvv 00000000
 ```
+```c
+*(uint32_t *)a += v;
+```
 
 ### 32-bit decrement
 ```
 30500000 0aaaaaaa
 vvvvvvvv 00000000
+```
+```c
+*(uint32_t *)a -= v;
 ```
 
 Increment or decrement the current value at address `a` by value `v`.
@@ -64,12 +91,25 @@ Increment or decrement the current value at address `a` by value `v`.
 4aaaaaaa nnnnssss
 vvvvvvvv iiiiiiii
 ```
+```c
+uint32_t *p = a;
+while(n--) {
+  *p = v;
+  p += s;
+  v += i;
+}
+```
 Starting with address `a`, this code type will write the 32-bit value `v` to `n` addreses. In each cycle, the address is incremented by `s`*4 and the value is incremented by `i`.
 
 ## 5: Copy bytes
 ```
 5sssssss nnnnnnnn
 0ddddddd 00000000
+```
+```c
+while(n--) {
+  *d++ = *s++;
+}
 ```
 Copy `n` bytes from source address `s` to destination address `d`.
 
@@ -117,30 +157,48 @@ Loads the 32-bit base address from address `a`, adds offset `p_0` to it to get a
 ```
 7aaaaaaa 000000vv
 ```
+```c
+*(uint8_t *)a |= v;
+```
 
 ### 16-bit OR
 ```
 7aaaaaaa 0010vvvv
+```
+```c
+*(uint16_t *)a |= v;
 ```
 
 ### 8-bit AND
 ```
 7aaaaaaa 002000vv
 ```
+```c
+*(uint8_t *)a &= v;
+```
 
 ### 16-bit AND
 ```
 7aaaaaaa 0030vvvv
+```
+```c
+*(uint16_t *)a &= v;
 ```
 
 ### 8-bit XOR
 ```
 7aaaaaaa 004000vv
 ```
+```c
+*(uint8_t *)a ^= v;
+```
 
 ### 16-bit XOR
 ```
 7aaaaaaa 0050vvvv
+```
+```c
+*(uint16_t *)a ^= v;
 ```
 
 Performs a bitwise logical operation between value `v` and the value stored at address `a`.
@@ -154,11 +212,27 @@ Performs a bitwise logical operation between value `v` and the value stored at a
 8aaaaaaa nnnnssss
 000000vv 000000ii
 ```
+```c
+uint8_t *p = a;
+while(n--) {
+  *p = v;
+  p += s;
+  v += i;
+}
+```
 
 ### 16-bit write
 ```
 8aaaaaaa nnnnssss
 1000vvvv 0000iiii
+```
+```c
+uint16_t *p = a;
+while(n--) {
+  *p = v;
+  p += s;
+  v += i;
+}
 ```
 
 Starting with address `a`, this code type will write the value `v` to `n` addresses. In each cycle, the address is incremented by `s` or `s`*2 and the value is incremented by `i`.
@@ -166,6 +240,11 @@ Starting with address `a`, this code type will write the value `v` to `n` addres
 ## C: 32-bit conditional
 ```
 Caaaaaaa vvvvvvvv
+```
+```c
+if(*(uint32_t *)a == v) {
+  // Execute all remaining codes
+}
 ```
 
 If the 32-bit value at address `a` is equal to value `v`, all subsequent codes will be executed.
@@ -175,6 +254,16 @@ If the 32-bit value at address `a` is equal to value `v`, all subsequent codes w
 ### 16-bit test
 ```
 Daaaaaaa nnt0vvvv
+```
+```c
+uint16_t *p = a;
+if      (t == 0 && *p == v) { // Execute next n lines }
+else if (t == 1 && *p != v) { // Execute next n lines }
+else if (t == 2 && *p < v) { // Execute next n lines }
+else if (t == 3 && *p > v) { // Execute next n lines }
+else if (t == 4 && *p != v) { // Execute next n lines }
+else if (t == 5 && *p != v) { // Execute next n lines }
+else if (t == 5 && *p != v) { // Execute next n lines }
 ```
 
 ### 8-bit test
