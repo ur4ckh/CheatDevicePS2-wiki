@@ -27,7 +27,7 @@ Constantly writes the 16-bit value `v` to address `a`.
 ```c
 *(uint32_t *)a = v
 ```
-Constantly writes the 16-bit value `v` to address `a`.
+Constantly writes the 32-bit value `v` to address `a`.
 
 **NOTE**: `a` must be word-aligned (`a % 4 == 0`).
 
